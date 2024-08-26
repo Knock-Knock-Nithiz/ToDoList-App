@@ -38,6 +38,11 @@ The application is deployed on Render and can be accessed at https://todolist-ap
 2. Create a new Web Service on Render: 1. Connect your GitHub repository. 2. Set up the environment variables, if any. 3. Choose the npm start as the build command.
    Deploy the app.
 
+### Username and Password
+
+1.USERNAME: nithi 
+2.PWD: nithi
+
 ### Technologies Used
 
 1. Node.js: JavaScript runtime for the server.
