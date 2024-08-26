@@ -5,6 +5,11 @@ let sanitizeHTML = require("sanitize-html");
 let app = express();
 
 let db;
+
+let port = process.env.port;
+if (port == null || port == "") {
+  port = 3000;
+}
 app.use(express.static("public"));
 
 let connectionString =
@@ -16,7 +21,7 @@ MongoClient.connect(connectionString)
     console.log("Database connected successfully.");
 
     // Start server
-    return app.listen(3000);
+    return app.listen(port);
   })
   .then(() => {
     console.log("Server listening on port 3000");
